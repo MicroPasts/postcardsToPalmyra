@@ -7,7 +7,7 @@ These fields are:
 * Whether card is not in English
 * Comments on card
 
-The object cards have been scanned by EES volunteers.
+The object cards have been created by the public.
 
 ## This project is on behalf of:
 
