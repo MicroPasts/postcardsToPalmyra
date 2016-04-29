@@ -3,7 +3,7 @@ of Palmyra in Trafalgar Square. All we ask is for help collecting:
 
 These fields are:
 
-* Transcription data data
+* Transcription of card contents
 * Whether card is not in English
 * Comments on card
 
