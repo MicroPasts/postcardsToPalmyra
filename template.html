@@ -336,7 +336,7 @@ Modernizr.load({
                 evt.preventDefault();
                 var answer = $(evt.target).attr("value");
                 if (typeof answer != 'undefined') {
-                    task.answer.description = $('#description').val();
+                    task.answer.transcription = $('#transcription').val();
                     task.answer.comments = $('#comments').val();
                     task.answer.foreignLanguage = $('#foreignLanguage').val();
                     console.log(task.answer);
