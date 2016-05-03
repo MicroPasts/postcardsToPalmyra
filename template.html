@@ -336,13 +336,9 @@ Modernizr.load({
                 evt.preventDefault();
                 var answer = $(evt.target).attr("value");
                 if (typeof answer != 'undefined') {
-                    task.answer = $("#excavationData").serializeJSON();
                     task.answer.description = $('#description').val();
-                    task.answer.excavatorName = $('#excavatorName').val();
-                    task.answer.cardNumber = $('#cardNumber').val();
                     task.answer.comments = $('#comments').val();
-                    task.answer.reverseCard = $('#reverseCard').val();
-                    task.answer.discoveryDate = $('#discoveryDate').val();
+                    task.answer.foreignLanguage = $('#foreignLanguage').val();
                     console.log(task.answer);
                     pybossa.saveTask(task.id, task.answer).done(function() {
                         $("html, body").animate({ scrollTop: 0 }, "slow");
