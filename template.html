@@ -336,6 +336,10 @@ Modernizr.load({
                 evt.preventDefault();
                 var answer = $(evt.target).attr("value");
                 if (typeof answer != 'undefined') {
+                    task.answer = $("#excavationData").serializeJSON();
+                    task.answer.transcription = $('#transcription').val();
+                    task.answer.comments = $('#comments').val();
+                    task.answer.foreignLanguage = $('#foreignLanguage').val();
                     console.log(task.answer);
                     pybossa.saveTask(task.id, task.answer).done(function() {
                         $("html, body").animate({ scrollTop: 0 }, "slow");
