@@ -21,7 +21,8 @@
         </h2>
         <p>
             Sorry, but your browser does not support the current application you ar trying to access.
-            If you want to contribute, please, upgrade to a modern web browser like the open source and free alternatives
+            If you want to contribute, please, upgrade to a modern web browser like the open source and free
+            alternatives
             <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a> or
             <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a>.
         </p>
@@ -128,12 +129,14 @@
                 <div class="form-group">
                     <label class="control-label" for="transcription">Descriptive text: </label>
                     <textarea rows="10" name="transcription" id="transcription" class="form-control fields"
-                           placeholder="If you can read the text on the postcard, please transcribe it here." rel="tooltip"></textarea>
+                              placeholder="If you can read the text on the postcard, please transcribe it here."
+                              rel="tooltip"></textarea>
                 </div>
 
                 <div class="form-group">
-                  <label class="control-label" for="foreignLanguage">Not in English </label>
-                    <input class="form-control fields" name="foreignLanguage" id="foreignLanguage" type="checkbox" value="reverseCard">
+                    <label class="control-label" for="foreignLanguage">Not in English </label>
+                    <input class="form-control fields" name="foreignLanguage" id="foreignLanguage" type="checkbox"
+                           value="reverseCard">
                 </div>
 
                 <hr/>
@@ -173,20 +176,36 @@
     <div class="modal-dialog">
         <div class="modal-content">
 
-             <div class="modal-header">
+            <div class="modal-header">
                 <h3 class="lead">Transcription of the Palmyra Arch postcards</h3>
             </div>
 
             <div id="0" class="modal-body" style="display:none">
                 <p>
                     This project is an application for the crowd-sourcing of data from postcards collected by Zena
-                    Kemash (Royal Holloway) during the display of the replica of the arch of Palmyra, Trafalgar Square
-                    (April 2016). Transcribing these cards is very simple!
+                    Kamash (Royal Holloway) during the display of the replica of the arch of Palmyra, Trafalgar Square
+                    (April 2016).
                 </p>
 
                 <p>
-                    Please just transcribe what you see on the card! If you have extra comments, or the text is in a different
-                    language, please tell us!
+                    Transcribing these cards is very simple.
+                </p>
+            </div>
+
+            <div id="1" class="modal-body" style="display:none">
+                <ul>
+                    <li>
+                        Transcribe the text on the card (if you can read it)
+                    </li>
+                    <li>
+                        If the text is not in English, please check the language box
+                    </li>
+                    <li>
+                        If you have comments on the postcard, please fill in the comments box
+                    </li>
+                </ul>
+                <p>
+                    We are very grateful for your help.
                 </p>
             </div>
 
@@ -209,6 +228,7 @@
                 placement: $(this).data("placement") || 'top'
             });
         });
+
 </script>
 
 <script>
@@ -237,6 +257,7 @@
 
     showStep('next');
     $("#modal").modal('show');
+
 </script>
 
 <!-- Client side scripts -->
@@ -248,12 +269,14 @@ Modernizr.load({
 });
 
 
+
 </script>
 
 <script type="text/javascript">
     $(window).resize(function(){
         console.log('Window resized');
     });
+
 </script>
 
 <!-- Load user progress -->
@@ -270,6 +293,7 @@ Modernizr.load({
             $('a[rel]').tooltip({'placement': 'left'});
         });
     }
+
 
 
 </script>
@@ -291,6 +315,7 @@ Modernizr.load({
             deferred.resolve(task);
         }
     });
+
 </script>
 
 <script type="text/javascript">
@@ -341,6 +366,7 @@ Modernizr.load({
         }
     });
     pybossa.run('postcardsToPalmyra');
+
 </script>
 
 <!-- Project specific styles -->
